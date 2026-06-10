@@ -1,147 +1,237 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Happy Birthday Preetam 💖</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <style>
-        body {
-            margin: 0;
-            text-align: center;
-            font-family: 'Comic Sans MS', cursive;
-            background: linear-gradient(to top, #ffd6e0, #fff0f5);
-            overflow: hidden;
-        }
+<title>🎂 Happy Birthday Didi ❤️</title>
 
-        h1 {
-            color: #ff4d6d;
-            margin-top: 30px;
-        }
+<style>
 
-        .card {
-            background: white;
-            padding: 20px;
-            margin: 20px;
-            border-radius: 20px;
-            box-shadow: 0 0 20px rgba(0,0,0,0.1);
-        }
+body{
+    margin:0;
+    padding:0;
+    text-align:center;
+    font-family:'Comic Sans MS',cursive;
+    background:linear-gradient(to top,#ffd6e0,#fff0f5);
+    overflow-x:hidden;
+}
 
-        img {
-            width: 150px;
-            border-radius: 50%;
-            border: 4px solid pink;
-        }
+h1{
+    color:#ff4d6d;
+    margin-top:30px;
+    font-size:40px;
+}
 
-        #typing {
-            color: #ff4d6d;
-            font-size: 18px;
-            margin-top: 10px;
-        }
+.card{
+    max-width:600px;
+    margin:auto;
+    background:white;
+    padding:20px;
+    border-radius:20px;
+    box-shadow:0 0 20px rgba(0,0,0,0.1);
+}
 
-        button {
-            background: pink;
-            border: none;
-            padding: 10px 20px;
-            border-radius: 20px;
-            color: white;
-            margin-top: 15px;
-            cursor: pointer;
-        }
+.profile{
+    width:180px;
+    height:180px;
+    object-fit:cover;
+    border-radius:50%;
+    border:5px solid pink;
+    animation:glow 2s infinite alternate;
+}
 
-        #surprise {
-            display: none;
-            color: #ff4d6d;
-            font-size: 18px;
-            margin-top: 15px;
-        }
+@keyframes glow{
+    from{
+        box-shadow:0 0 10px pink;
+    }
+    to{
+        box-shadow:0 0 30px hotpink;
+    }
+}
 
-    </style>
+#typing{
+    margin-top:15px;
+    font-size:20px;
+    color:#ff4d6d;
+    min-height:80px;
+}
+
+#gift{
+    width:120px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+#gift:hover{
+    transform:scale(1.1);
+}
+
+#surprise{
+    display:none;
+    background:#fff0f5;
+    padding:20px;
+    border-radius:20px;
+    margin-top:20px;
+    color:#ff4d6d;
+    font-size:20px;
+}
+
+button{
+    background:pink;
+    color:white;
+    border:none;
+    padding:12px 25px;
+    border-radius:20px;
+    cursor:pointer;
+    font-size:16px;
+}
+
+button:hover{
+    transform:scale(1.1);
+}
+
+.heart{
+    position:fixed;
+    top:-20px;
+    font-size:25px;
+    animation:fall linear forwards;
+}
+
+@keyframes fall{
+    to{
+        transform:translateY(110vh);
+    }
+}
+
+.footer{
+    margin-top:20px;
+    color:#888;
+}
+
+</style>
 </head>
 
 <body>
 
-<h1>🎂 Happy Birthday Preetam 🎂</h1>
+<h1>🎂 Happy Birthday Didi ❤️</h1>
 
 <div class="card">
 
-    <!-- BF Photo -->
-    <img src="https://i.imgur.com/yourimage.jpg">
+<!-- Photo -->
+<img src="C:\Users\DEBJANI\OneDrive\Documents\bdy\photo.jpg.jpeg" class="profile">
+<!-- Music -->
+<audio autoplay loop controls>
+<source src="C:\Users\DEBJANI\OneDrive\Documents\bdy\music.mp3.ogg" type="audio/mpeg">
+</audio>
 
-    <!-- Typing Message -->
-    <div id="typing"></div>
+<!-- Typing Message -->
+<div id="typing"></div>
 
-    <!-- Gift Box -->
-    <br><br>
-    <img src="https://cdn-icons-png.flaticon.com/512/3468/3468371.png" 
-    width="100" onclick="openGift()" id="gift">
+<br>
 
-    <!-- Hidden Surprise -->
-    <div id="surprise">
-        💖 Surpriseeee Baby 💖 <br><br>
-        Tumi amar chocolate 🍫 <br>
-        amar teddy 🐻 <br>
-        amar shob kichu 💕 <br><br>
-        Ami tomake onek onek bhalobashi 😘❤️
-    </div>
+<h2>🎁 Open Your Surprise 🎁</h2>
+<h2>TAP ME</h2>
+
+<img id="gift"
+src="https://cdn-icons-png.flaticon.com/512/3468/3468371.png"
+onclick="openGift()">
+
+
+
+<div id="surprise">
+
+<h2>💖 Surpriseeeee 💖</h2>
+
+<p>
+Tumi amar life er sobcheye special manus ❤️<br><br>
+
+Tor sob swapno puron hok 🌸<br>
+Sob somoy hasi khushi thak 😊<br>
+Ami sobsomoy tomar pashe achi 💕<br><br>
+
+🎂 Happy Birthday Didi 🎂
+</p>
 
 </div>
 
-<!-- Cute GIF -->
-<img src="C:\Users\DEBJANI\OneDrive\Documents\bdy\p.JPEG" width="130">
+<div class="footer">
+✨ Made With Love💕 ✨
+</div>
 
-<!-- Music -->
-<audio autoplay loop>
-  <source src="https://www.bensound.com/bensound-music/bensound-romantic.mp3">
-</audio>
+</div>
+
 
 <script>
 
-/// ❤️ Typing Effect
-let text = "My cutest baby Preetam 🧸💖 ... Tumi amar life er sobcheye special manus 😘";
-let i = 0;
+// Typing Effect
 
-function typeEffect() {
-    if (i < text.length) {
+let text =
+"💖 My Cutest Didi 💖 ... Tumi amar life er sobcheye special manus. Happy Birthday ❤️🎂";
+
+let i=0;
+
+function typeEffect(){
+
+    if(i < text.length){
+
         document.getElementById("typing").innerHTML += text.charAt(i);
+
         i++;
-        setTimeout(typeEffect, 50);
+
+        setTimeout(typeEffect,50);
     }
 }
+
 typeEffect();
 
 
-/// 🎁 Gift Open
+// Open Gift
+
 function openGift(){
-    document.getElementById("gift").style.display = "none";
-    document.getElementById("surprise").style.display = "block";
+
+    document.getElementById("gift").style.display="none";
+
+    document.getElementById("surprise").style.display="block";
+
+    alert("🎉 Surprise Unlocked 🎉");
 }
 
 
-/// 💕 Falling Hearts
-setInterval(() => {
-    let heart = document.createElement("div");
-    heart.innerHTML = "💗";
-    heart.style.position = "fixed";
-    heart.style.left = Math.random() * 100 + "vw";
-    heart.style.top = "-10px";
-    heart.style.fontSize = (15 + Math.random() * 20) + "px";
+// Falling Hearts
+
+setInterval(()=>{
+
+    let heart=document.createElement("div");
+
+    heart.className="heart";
+
+    heart.innerHTML="❤️";
+
+    heart.style.left=Math.random()*100+"vw";
+
+    heart.style.fontSize=
+    (15+Math.random()*25)+"px";
+
+    heart.style.animationDuration=
+    (3+Math.random()*4)+"s";
 
     document.body.appendChild(heart);
 
-    let fall = setInterval(() => {
-        let top = parseFloat(heart.style.top);
-        heart.style.top = top + 2 + "px";
+    setTimeout(()=>{
+        heart.remove();
+    },7000);
 
-        if (top > window.innerHeight) {
-            clearInterval(fall);
-            heart.remove();
-        }
-    }, 20);
-}, 300);
+},300);
 
 
-/// 💌 First popup
+// Welcome Popup
+
 setTimeout(()=>{
-    alert("Scan korar jonno thank you baby 😘❤️");
+
+
+alert("🎂 Happy Birthday Didi ❤️\nWishing you love, happiness, success, and all the joy in the world! ✨");
+
 },1000);
 
 </script>
